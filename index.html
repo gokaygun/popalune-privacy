@@ -18,7 +18,7 @@
 <body>
   <main>
     <h1>Popalune Privacy Policy</h1>
-    <p class="muted"><strong>Effective date:</strong> 5 November 2026</p>
+    <p class="muted"><strong>Effective date:</strong> 7 November 2026</p>
     <p>Popalune is a free casual match-3 puzzle game. You do not need to register or provide a name, email address, phone number, or precise location to play.</p>
 
     <h2>Information stored on your device</h2>
@@ -26,15 +26,17 @@
 
     <h2>Firebase services and cloud saves</h2>
     <p>When Firebase is available, Popalune creates a pseudonymous Firebase Anonymous Authentication identifier and uses Cloud Firestore to back up game progression and related game-state data, such as completed levels, stars, scores, virtual currency, inventory, active runs and missions. The game does not ask for a name, email address or phone number for this identifier. Firebase Analytics processes app interaction and gameplay events; Crashlytics processes crash and diagnostic information; and Performance Monitoring processes app startup, performance and network timing information. These services are provided by Google and use data to provide, maintain and improve the game and its services.</p>
-    <p>Cloud backup requires a network connection and may be unavailable. It is not an account recovery service. The anonymous identifier may not be recoverable after the app is uninstalled or its data is cleared.</p>
+    <p>You can optionally connect Google Play Games in Settings. Play Games authenticates your Google Play Games account and provides a server authorization code used to link or recover your Firebase game identity. Popalune uses the resulting account identifier to restore the cloud save after reinstalling the game. The app does not ask you to enter your Google account email address or name. The authorization code is used for authentication and is not stored in the game save.</p>
+    <p>Cloud backup requires a network connection and may be unavailable. Without a linked Play Games account, the anonymous identifier may not be recoverable after uninstalling the app or clearing its data.</p>
 
     <h2>Advertising and consent</h2>
     <p>Popalune uses Google Mobile Ads (AdMob) for optional rewarded ads and occasional interstitial ads. Unity Ads is an enabled bidding source in the app’s AdMob mediation configuration. These advertising services may process device or advertising identifiers, IP-derived approximate location, ad requests, impressions and interactions, app information and diagnostics for ad delivery, measurement, fraud prevention and service improvement. The advertising providers may receive this information as part of serving or measuring ads.</p>
     <p>Where required, Google’s User Messaging Platform (UMP) presents consent choices before ads are requested and provides a privacy-options form in the game. Your choices and device-level advertising controls can affect ad personalization. Data sent to these providers is transmitted over encrypted network connections.</p>
 
     <h2 id="data-deletion">Data retention and deletion</h2>
-    <p><strong>Delete a cloud save:</strong> open Popalune, go to <strong>Settings</strong>, and choose the cloud-save deletion option. This deletes the game’s cloud-save document from Firestore for the current anonymous player. It does not delete the local save or local settings on the device. Clear the app’s storage or uninstall the app to remove local data from that device.</p>
-    <p>The in-game deletion control does not delete analytics, crash or performance records already processed by Google, or advertising records held by an ad provider. Those records are handled under the provider’s retention and deletion controls and privacy policies. The anonymous Firebase identity may remain after the cloud-save document is deleted.</p>
+    <p><strong>Delete a cloud save:</strong> open Popalune, go to <strong>Settings</strong>, and choose <strong>Delete Cloud Data</strong>. This deletes the current player's cloud-save document from Firestore and attempts to delete the current Firebase authentication identity. The local game save and settings remain on the device. If you continue playing, local progress may be backed up again under a new or recovered identity. Clear the app's storage or uninstall the app to remove local data from that device.</p>
+    <p><strong>Request deletion:</strong> email <a href="mailto:quicksavem@gmail.com?subject=Popalune%20data%20deletion%20request">quicksavem@gmail.com</a> with a Popalune data deletion request if you cannot use the in-app control or want help with an account linked to Play Games. We will tell you what information is needed to identify your game data; do not send a password or authorization code. The request covers game cloud-save data and its associated Firebase game identity where we can identify them. Local data must be removed on your device. Provider-held advertising and diagnostic records may be retained under the providers' own policies and retention periods.</p>
+    <p>The in-game deletion control does not delete analytics, crash or performance records already processed by Google, or advertising records held by an ad provider. Those records are handled under the provider’s retention and deletion controls and privacy policies. If Firebase identity deletion fails, the identity may remain after the cloud-save document is deleted.</p>
 
     <h2>Children</h2>
     <p>Popalune is not designed for or marketed specifically to children. Its Google Play target audience is ages 13 and older.</p>
